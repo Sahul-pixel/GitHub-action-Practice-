@@ -1,0 +1,27 @@
+#workflow
+name: CI/CD
+on: workflow_dispatch
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone the code from github
+        run: echo "cloning the code from github
+  
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build code using docker
+        run: echo "code build image create dockerfile"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test the application
+        run: echo "testing is completed"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy code in production 
+        run: echo "appliction has deploy in production"
+        
