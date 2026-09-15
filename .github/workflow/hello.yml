@@ -1,0 +1,12 @@
+# Example of git workflow 
+
+# Workflow [ In workflowshould have name and when yaml file should run and start
+
+#jobs
+should be inside the workflow, jos can we multiple such as code-build-test-deploy
+
+# step
+should inside job [step also can we multiple]
+
+# Action 
+should inside the step that can automate the command 
