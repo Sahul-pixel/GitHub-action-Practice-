@@ -1,0 +1,18 @@
+# the goal is for this lint file whenever some change in my python file and run automatically
+# checks your code for syntax mistakes, formatting problems, bad practices,
+# and potential errors before the code is used or deployed.
+
+name: pylint
+on: 
+  push: 
+    paths: "*.py"
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone the code 
+        uses: actions/checkout@v4
+
+      - name: install linter
+        run: pip install ruff
