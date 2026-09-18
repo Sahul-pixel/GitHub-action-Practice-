@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
-        uses: action/checkout@v7
+        uses: actions/checkout@v7
         
       - name: Set up Docker
         uses: docker/setup-docker-action@v5
